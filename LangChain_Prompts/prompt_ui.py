@@ -62,16 +62,3 @@ prompt = template.invoke({
 if st.button('Summarize'):
     response = llm.invoke(prompt)
     st.text(response.content)
-
-# template = load_prompt('template.json')
-
-
-
-# if st.button('Summarize'):
-#     chain = template | llm
-#     result = chain.invoke({
-#         'paper_input':paper_input,
-#         'style_input':style_input,
-#         'length_input':length_input
-#     })
-#     st.write(result.content)
